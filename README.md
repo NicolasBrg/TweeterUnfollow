@@ -20,7 +20,7 @@ javascript:var FOLLOW_TEXT = "Abonné"; var UNFOLLOW_TEXT = "Se désabonner"; fu
 
 # Script
 ## Search Function
-Main function of the script, this one will detect the first valid "Followed user", next it will click on it call UnFollow Function, then the GetMaxParent Function that will return the container of the concerned user to hide him.
+Main function of the script, this one will detect the first valid "Followed user", then it will click on it call UnFollow Function, then the GetMaxParent Function that will return the container of the concerned user to hide him.
 
 ```Javascript
 function search(){
@@ -45,7 +45,7 @@ function search(){
 ```
 
 ## UnFollow Function
-UnFollow function will detect the button to confirm the unfollow and click on him.
+UnFollow function will detect the button to confirm the unfollow and click on it.
 
 ```JavaScript
 function unfollow(){
@@ -60,7 +60,7 @@ function unfollow(){
 }
 ```
 ## GetMaxParent Function
-One function totally esthetic that will return the HTML Element that contain unfollowed user to apply an animation into Search Function
+One function totally aesthetic that will return the HTML Element that contain unfollowed user to apply an animation into Search Function
 
 ```Javascript
 function getMaxParent(id) {
