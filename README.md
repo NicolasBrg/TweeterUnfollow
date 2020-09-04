@@ -12,7 +12,7 @@ var FOLLOW_TEXT = "Abonné";
 var UNFOLLOW_TEXT = "Se désabonner";
 ```
 
-Example of usage in the URL Barre:
+Example of usage in the URL:
 ```
 javascript:var FOLLOW_TEXT = "Abonné"; var UNFOLLOW_TEXT = "Se désabonner"; function search(){ var v = document.getElementsByTagName("*"); for(var i = 0; i < v.length; i++) { if(v[i].innerText == FOLLOW_TEXT && v[i].attributes[0].value == "button") { v[i].click(); unfollow(); var temp = getMaxParent(v[i]).parentElement.parentElement; temp.style.transitionDuration = "0.3s"; temp.style.height = 0; temp.style.opacity = 0; return; } } } function getMaxParent(id) { var elem = id; do { elem = elem.parentElement; } while (elem.attributes[0].value != "button"); return elem; } function unfollow(){ var v = document.getElementsByTagName("*"); for(var i = 0; i < v.length; i++) { if(v[i].innerText == UNFOLLOW_TEXT) { v[i].click(); return; } } } setInterval(search, parseInt(prompt("Delay:", 1000)));
 ```
